@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="theScript.js"></script>
+</head>
+<body>
+   <header>
+
+    <a href="#" class="logo">The Coffee Shop<span>.</span></a>
+
+    <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#beans">Coffee beans</a></li>
+        <li><a href="#products">Our products</a></li>
+        <li><a href="#Contact">Contact</a></li>
+    </ul>
+    </header> 
+
+
+    <section class="cover" id="home">
+
+        <div class="glass">
+            <br>
+            <br>
+            <h1>
+                Welcome To <span style="--i:1">T</span>
+                <span style="--i:2">h</span> 
+                <span style="--i:3">e</span> 
+                 <span style="--i:4">C</span>
+                <span style="--i:5">o</span> 
+                <span style="--i:6">f</span>
+                <span style="--i:7">f</span>
+                <span style="--i:8">e</span>
+                <span style="--i:9">e</span> 
+                <span style="--i:10">S</span>
+                <span style="--i:11">h</span>
+                <span style="--i:12">o</span>
+                <span style="--i:13">p</span>
+                <span style="--i:14">!</span>
+                 Where Coffee
+                Is The Conversation!
+            </h1>
+
+        </div>
+
+    </section>
+
+   
+
+
+
+
+    <section>
+        <br>
+        <br>
+        <h2 ALIGN="center"> Our coffee beans:</h2>
+
+        <div class="flexbox">
+            <div>
+                <img src="colombianbeanspic.png" alt="colombian beans pic">
+                <p>
+                    Colombian Supremo coffee is one coffee with a super-sized specialty.
+                    These Colombian coffee beans are larger than regular sized coffee beans, and with their added size,
+                    they provide an unforgettably authentic Colombian coffee experience.
+                    These Colombian Supremo coffee beans are high quality and pack flavorful punch.
+                </p>
+            </div>
+            <div>
+                <img src="ethiopiabeanspic.png" alt="ethiopia beans pic">
+                <p>
+                    Ethiopian Yirgacheffe coffee is one of the worlds most sought after coffees.
+                    Since Ethiopia is the birthplace of coffee and it has embedded history as the first coffee growing region,
+                    it's no wonder these beans are incredibly popular.
+                </p>
+            </div>
+            <div>
+                <img src="jamaicabeanspic.png" alt="jamaica beans pic">
+                <p>
+                    100% certified Jamaican Blue Mountain Coffee,
+                    Grade #1 is one of the most expensive coffees in all of the world,
+                    but its decadence makes up for the price. This rare and exceptional coffee
+                    from Jamaica is known for having a rich taste, full of body and a very smooth chocolate finish.
+                    If you are looking for a subtle tang, this coffee is worth the price!
+                </p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section>
+        <div class="coffebar">
+            <h2 ALIGN="center"> Our products:</h2>
+            
+    
+      <img  src="BC.png" width="120" height="120" id="b">
+      <img  src="ice.webp" width="120" height="120" id="i">
+      <img  src="latte.png" width="120" height="120" id="l">
+      <img  src="flat.png" width="120" height="120" id="f">
+      
+      <h3 ALIGN="center" id="output"></h3> 
+    
+    </div>
+    <h6 class="expline"> *but the mouse over the picture to display product name </h6>
+    
+    </section>
+
+    <input type="button" value="Order now!" id="btn" onclick="coffeeshop()">
+
+    <section>
+        <article class="article">
+            <details>
+                <summary ALIGN="center">Our Branches!</summary>
+                <ul ALIGN="center">
+                    <il><a href="location 1"> Location 1</a></il>
+                    <br>
+                    <il><a href="location 2"> Location 2</a></il>
+                    <br>
+                    <il><a href="location 3"> Location 3</a></il>
+
+                </ul>
+
+            </details>
+        </article>
+        <br>
+        <br>
+    </section>
+    <br>
+
+    <footer>
+        <br>
+        <br>
+        <address>
+            contact us at <a href="alrajehasia@gmail.com"> the coffee shop.</a>
+        </address>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll',function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("stick", window.scrollY > 0);
+
+        });
+    </script>
+</body>
+</html>
